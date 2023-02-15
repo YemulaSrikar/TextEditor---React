@@ -1,0 +1,55 @@
+.main-bg-cont {
+  background-color: #25262c;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.bg-card {
+  background-color: #1b1c22;
+  padding: 30px;
+  display: flex;
+  height: 70vh;
+  width: 45vw;
+}
+.text-head {
+  color: #f8fafc;
+  font-family: 'Roboto';
+  font-size: 23px;
+  text-align: center;
+  font-weight: bold;
+}
+.text-editor-img {
+  height: 300px;
+  width: 250px;
+}
+.icons-buttons-lst {
+  display: flex;
+  align-items: flex-start;
+  list-style-type: none;
+  padding: 15px;
+}
+.buttons-cont {
+  border: 1px solid #334155;
+  border-radius: 08px;
+  margin-left: 28px;
+  width: 47%;
+}
+.hr-line-cont {
+  display: flex;
+  flex-direction: column;
+}
+.hr-line {
+  width: 260px;
+  border: 1px solid #334155;
+}
+.icon-buttons {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #ffffff;
+  margin-top: 0px;
+}
