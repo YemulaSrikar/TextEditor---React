@@ -29,7 +29,7 @@
   display: flex;
   align-items: flex-start;
   list-style-type: none;
-  padding: 15px;
+  padding-left: 0px;
 }
 .buttons-cont {
   border: 1px solid #334155;
@@ -44,12 +44,5 @@
 .hr-line {
   width: 260px;
   border: 1px solid #334155;
-}
-.icon-buttons {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  color: #ffffff;
   margin-top: 0px;
 }
