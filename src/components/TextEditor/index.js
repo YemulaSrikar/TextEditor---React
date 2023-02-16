@@ -2,7 +2,12 @@ import {Component} from 'react'
 import {VscBold} from 'react-icons/vsc'
 import {GoItalic} from 'react-icons/go'
 import {AiOutlineUnderline} from 'react-icons/ai'
-import {TextArea, BoldIcon, ItalicIcon, UnderlineIcon} from './styledComponents'
+import {
+  TextArea,
+  BoldButton,
+  ItalicButton,
+  UnderlineButton,
+} from './styledComponents'
 import './index.css'
 
 class TextEditor extends Component {
@@ -51,40 +56,34 @@ class TextEditor extends Component {
         <div className="buttons-cont">
           <ul className="icons-buttons-lst">
             <li>
-              <button
+              <BoldButton
                 data-testid="bold"
                 type="button"
-                className="icon-buttons"
+                isClickedBold={isClickedBold}
                 onClick={this.onTriggerBold}
               >
-                <BoldIcon isClickedBold={isClickedBold}>
-                  <VscBold size={25} />
-                </BoldIcon>
-              </button>
+                <VscBold size={25} />
+              </BoldButton>
             </li>
             <li>
-              <button
+              <ItalicButton
                 data-testid="italic"
                 type="button"
-                className="icon-buttons"
+                isClickedItalic={isClickedItalic}
                 onClick={this.onTriggerItalic}
               >
-                <ItalicIcon isClickedItalic={isClickedItalic}>
-                  <GoItalic size={25} />
-                </ItalicIcon>
-              </button>
+                <GoItalic size={25} />
+              </ItalicButton>
             </li>
             <li>
-              <button
+              <UnderlineButton
                 data-testid="underline"
                 type="button"
-                className="icon-buttons"
+                isClickedUnderline={isClickedUnderline}
                 onClick={this.onTriggerUnderline}
               >
-                <UnderlineIcon isClickedUnderline={isClickedUnderline}>
-                  <AiOutlineUnderline size={25} />
-                </UnderlineIcon>
-              </button>
+                <AiOutlineUnderline size={25} />
+              </UnderlineButton>
             </li>
           </ul>
           <div className="hr-line-cont">
